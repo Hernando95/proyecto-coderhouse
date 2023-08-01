@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Krona One", sans-serif;
+}
+.nav-area {
+  position: fixed;
+  background: #262626;
+  height: 62px;
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  line-height: 70px;
+  padding: 0 40px;
+}
+.nav-area ul {
+  float: right;
+  margin-right: 20px;
+}
+.nav-area ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+.nav-area ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 22px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-area ul li a:hover {
+  background: darkorange;
+  transition: 0.5s;
+}
+.btn-area {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 62px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#box {
+  display: none;
+}
+
+.logo-img {
+  margin-right: 90px;
+}
+
+@media (max-width: 720px) {
+  .container{
+    background-color: aqua;
+  }
+  .logo-img {
+    margin-right: 0px;
+  }
+  .btn-area {
+    display: block;
+  }
+  .nav-area ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-area ul li {
+    margin: 0;
+    line-height: 30px;
+    padding: 25px 0;
+  }
+  .nav-area ul li a {
+    font-size: 1.2rem;
+  }
+
+
+  #box:checked ~ ul {
+    left: 0;
+  }
+}
+
+.box-card {
+  padding: 40px;
+  cursor: pointer;
+}
+
+.video-title {
+  color: rgb(255, 34, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 30%;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 12px 10px 11px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 10px 11px 1px rgba(0,0,0,0.75);
+box-shadow: 12px 10px 11px 1px rgba(0,0,0,0.75);
+
+  
+}
+
+.card:hover{
+opacity: 0.5;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+@media (max-width: 860px) {
+  .card-container {
+  }
+
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
